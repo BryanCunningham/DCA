@@ -4,3 +4,48 @@
 +font-face(entypo-social, /fonts/entypo-social)
 +font-face(entypo, /fonts/entypo)
 @import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One)
+
+*
+  box-sizing: border-box
+
+body
+  background: $white
+
+ul
+  padding: 0
+  margin: 0
+
+li
+  list-style-type: none
+
+.container
+  +clearfix
+  max-width: 1024px
+  width: 96%
+  margin: auto
+
+header
+  background: $white
+  border-bottom: 10px solid $yellow
+  margin: 0 0 5px 0
+
+.logo
+  +hide-text
+  +size(198 100)
+  float: left
+  background: url(../images/logo.jpg)
+
+nav
+  +bebas
+  color: $dark-gray
+  float: right
+  padding: 35px 0 0 0
+
+  ul
+    float: left
+
+  li
+    float: left
+    letter-spacing: 2px
+    margin: 0 0 0 36px
+    font-size: 24px
