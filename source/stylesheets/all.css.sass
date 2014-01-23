@@ -3,6 +3,9 @@
 +font-face(BebasNeue, /fonts/BebasNeue-webfont)
 +font-face(entypo-social, /fonts/entypo-social)
 +font-face(entypo, /fonts/entypo)
++font-face(proxima_nova_black, /fonts/proxima_nova_black)
++font-face(proxima_nova_bold, /fonts/proxima_nova_bold)
++font-face(proxima_nova_reg, /fonts/proxima_nova_reg)
 @import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One)
 @import colors
 @import mixins
@@ -12,6 +15,7 @@
   box-sizing: border-box
 
 body
+  font-family: $helvetica
   background: $white
 
 ul
@@ -20,6 +24,12 @@ ul
 
 li
   list-style-type: none
+
+i
+  font-style: normal
+
+.social
+  font-family: "entypo-social"
 
 .container
   +clearfix
@@ -73,8 +83,6 @@ nav
 
   i
     float: left
-    font-family: "entypo-social"
-    font-style: normal
     font-size: 36px
     position: relative
     bottom: 9px
