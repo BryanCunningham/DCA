@@ -66,17 +66,31 @@ nav
 
 .hero-image
   +clearfix
-  background: $white
+  height: 500px
+  width: 5600px
+  background: $light-gray
+  +animation(slideShow 60s linear infinite)
+
++keyframes(slideShow)
+  0%
+    +transform(translate3d(0, 0, 0))
+  100%
+    +transform(translate3d(-2800px, 0, 0))
+
+.collage
+  float: left
+  width: 2800px
+
 
 .feature-photo
+  +size( 275px 250px)
   float: left
-  width: 24.69%
   margin: 0 5px 5px 0
-  height: 200px
-  background: $yellow
+  border: 10px solid $white
+  overflow: hidden
 
-  &:nth-child(4n+4)
-    margin: 0 0 5px 0
+  img
+    max-width: 100%
 
 .instagram
   float: right
