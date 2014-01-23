@@ -105,13 +105,100 @@ nav
 
 .feature
   +border
+  position: relative
   float: left
-  width: 30%
-  height: 300px
-  margin: 0 20px 0 0
-  border: 3px solid $yellow
+  width: 31.3%
+  height: 395px
+  padding: 55px
+  margin: 0 3% 80px 0
+  border: 3px solid $mustard
+
+  &:last-child
+    margin: 0
+
+  h2, h3, h4
+    text-align: center
+
+  h3, h4
+    font-family: "proxima_nova"
+
+  h2
+    +bebas
+    font-size: 30px
+
+  h3
+    font-family: "proxima_nova_reg"
+    font-size: 22px
+    font-weight: 100
+    text-align: center
+    margin: 0
+
+  h4
+    font-family: "proxima_nova_bold"
+    font-size: 15px
+
+.kitchen-hours
+  h4
+    margin: 5px 0
 
 .icon-holder
-  +size(36px)
+  +size(96px)
+  margin: auto
   border-radius: 50%
   background: $yellow
+
+.point
+  +size(20px)
+  +transform()
+
+.directions
+  +clearfix
+  cursor: pointer
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  padding: 30px
+  background: $yellow
+  border-top: 3px solid $mustard
+  border-radius: 0 0 3px 3px
+
+  h3
+    float: left
+
+  i
+    font-family: "entypo"
+    font-size: 54px
+    position: absolute
+    bottom: 14px
+    right: 30px
+
+footer
+  background: $lighter-gray
+  padding: 30px
+  color: $mid-gray
+  font-size: 12px
+
+  p
+    margin: 0 22% 0 0
+    float: left
+
+  ul
+    +clearfix
+    float: left
+
+    li
+      float: left
+.icons
+  +clearfix
+  float: right
+  position: relative
+  bottom: 10px
+  border: 1px solid
+  margin: 0 0 0 10px
+  padding: 0 10px
+  cursor: pointer
+
+  i
+    float: left
+    font-size: 36px
