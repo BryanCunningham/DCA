@@ -197,10 +197,43 @@ nav
   background: url(../images/phone.png)
 
 .clock
-  +size(77 73)
+  +size(78 74)
   top: 11px
+  position: relative
   background: url(../images/clock.png)
   // I think this be all HTML/CSS and animate the clock hands. Didn't want to spend much time on this
+
+.large-hand, .small-hand
+  background: $salmon
+  position: absolute
+  border-radius: 10px
+
+.large-hand
+  +size(40 10)
+  top: 33px
+  left: 3px
+  +transform(rotate(45deg))
+  +animation(clock 60s linear infinite)
+  +transform-origin(37px 5px)
+
+.small-hand
+  +size(24 10)
+  +transform(rotate(160deg))
+  top: 31px
+  left: 36px
+  +transform-origin(5px 5px)
+  +animation(clock 720s linear infinite)
+
++keyframes(clock)
+  0%
+    +transform(rotate(0deg))
+
+  100%
+    +transform(rotate(360deg))
+
+
+
+
 
 .hotdog
   +size(55 67)
