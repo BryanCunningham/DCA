@@ -173,6 +173,28 @@ nav
   border-radius: 50%
   background: $yellow
 
+.phone, .clock, .hotdog
+  margin: auto
+  position: relative
+
+.phone
+  +size(31 53)
+  top: 20px
+  background: url(../images/phone.png)
+
+.clock
+  +size(77 73)
+  top: 11px
+  background: url(../images/clock.png)
+  // I think this be all HTML/CSS and animate the clock hands. Didn't want to spend much time on this
+
+.hotdog
+  +size(55 67)
+  top: 13px
+  background: url(../images/hotdog.png)
+  // I would probably make this HTML/CSS as well. Thought about animating the mustard being squirted on as well
+
+
 .point
   +size(28px)
   +transform(rotate(45deg))
