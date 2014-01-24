@@ -229,3 +229,25 @@ footer
   i
     float: left
     font-size: 36px
+
+
+.spinner
+  +size(100px)
+  margin: auto
+
+  i
+    +size(229 285)
+    display: block
+    position: relative
+    top: 105px
+    font-size: 250px
+    +transform-origin(50% 50%)
+    +animation(load 3s linear infinite)
+
++keyframes(load)
+  0%
+    +transform(rotate(0deg))
+
+  100%
+    +transform(rotate(360deg))
+
