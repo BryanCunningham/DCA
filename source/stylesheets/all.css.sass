@@ -66,12 +66,23 @@ nav
     margin: 0 0 0 36px
     font-size: 24px
 
-.hero-image
+.hero-image, .hero-overlay
   +clearfix
   height: 500px
   width: 100%
   position: relative
-  background: $light-gray
+  overflow: hidden
+
+.hero-overlay
+  z-index: 3
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  +linear-gradient(rgba(0,0,0, .1), rgba(255,255,255, 0), rgba(0,0,0, .1))
+// This needs more love. It's off a little bit. Also I would write a fallback for legacy IE
+// due to it not playing nicely with rgba gradients
 
 .collage-container
   +clearfix
@@ -83,6 +94,7 @@ nav
 .collage
   float: left
   width: 2800px
+  background: $light-gray
   +animation(slideShow 100s linear infinite)
 
 +keyframes(slideShow)
