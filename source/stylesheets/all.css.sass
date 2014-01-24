@@ -27,6 +27,8 @@ li
   list-style-type: none
 
 i
+  line-height: 1
+  font-family: "entypo"
   font-style: normal
 
 .social
@@ -69,17 +71,17 @@ nav
   height: 500px
   width: 5600px
   background: $light-gray
-  +animation(slideShow 60s linear infinite)
+
+.collage
+  float: left
+  width: 2800px
+  +animation(slideShow 100s linear infinite)
 
 +keyframes(slideShow)
   0%
     +transform(translate3d(0, 0, 0))
   100%
     +transform(translate3d(-2800px, 0, 0))
-
-.collage
-  float: left
-  width: 2800px
 
 
 .feature-photo
